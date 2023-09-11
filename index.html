@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <!-- <script src="src/assets/js/index.js" type="module" defer></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <script src="src/assets/js/index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div>
+                <nav>
+                    <ul class="flex-center">
+                        <li>
+                            <a class="" href="#"><i class="bi bi-house-fill current"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-grid-fill"></i></a>
+                        </li>
+                        <li>
+                            <a class="" target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5581991869812&text=Ol%C3%A1,%20tenho%20interesse%20em%20seus%20produtos."><i
+                                    class="bi bi-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a class="" id="cart" href="src/pages/cart.html"><span style="position: relative;"><i
+                                        class="bi bi-cart-fill"></i>
+                                    <span id="cart-qty">000</span></span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="interface">
+
+            <div class="card">
+                <div>
+                    <img src="src/assets/image/1689205716989-pexels-ficky-2364618.webp" alt="">
+                </div>
+                <div class="info flex-center">
+                    <h3>PRODUTO 01</h3>
+                    <p>Preço: <span>39,90</span></p>
+                    <p class="desc">Produto bem feito e de qualidade.</p>
+                    <button onclick="toogle()" class="btn">Espiar <i class="bi bi-eye-fill"></i></button>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="src/assets/image/1689205716989-pexels-ficky-2364618.webp" alt="">
+                </div>
+                <div class="info flex-center">
+                    <h3>PRODUTO 01</h3>
+                    <p>Preço: <span>39,90</span></p>
+                    <p class="desc">Produto bem feito e de qualidade.</p>
+                    <button onclick="toogle()" class="btn">Espiar <i class="bi bi-eye-fill"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toogle" id="toogle">
+           <div>
+            <span onclick="exitToogle()" class="exit">x</span>
+            <div class="card">
+                <div id="toogle-img-default" style="position: relative;">
+                    <span>&lt;</span>
+                    <img src="src/assets/image/1689205716989-pexels-ficky-2364618.webp" alt="">
+                    <span style="right: 0;">&gt;</span>
+                </div>
+                <div class="mini-picture">
+                    <span>
+                        <img src="src/assets/image/1689205752812-pexels-devesh-pandey-2958620.webp" alt="">
+                    </span>
+                    <span>
+                        <img src="src/assets/image/1689205971882-pexels-ingrid-santana-1878687.webp" alt="">
+                    </span>
+                    <span>
+                        <img src="src/assets/image/1689284591972-pexels-andrea-piacquadio-845434.webp" alt="">
+                    </span>
+                </div>
+                <div class="info flex-center">
+                    <h3>PRODUTO 01</h3>
+                    <p>Preço: <span>39,90</span></p>
+                    <form>
+                     <div class="sizes flex-center">
+                        <span> tamanhos: </span>
+                        <label for="p">P</label>
+                        <input type="radio" name="size" id="p">
+                        <label for="m">M</label>
+                        <input type="radio" name="size" id="m">
+                        <label for="g">G</label>
+                        <input type="radio" name="size" id="g">
+                     </div>
+                     <div class="colors flex-center">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                        <label for=""></label>
+                        <input type="radio" name="color" id="">
+                     </div>
+                     <div class="flex-center">
+                        <input class="btn" type="submit" value="Escolher">
+                     </div>
+                    </form>
+                </div>
+            </div>
+           </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --border-color: rgba(0, 0, 0, 0.5);
+}
+
+.interface {
+    max-width: 1200px;
+}
+
+.btn {
+    background-color: blue;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 3.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    padding: 0.2rem 0;
+    box-shadow: 0px 0px 10px var(--shadow-color);
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+header .flex-center {
+    gap: 0;
+}
+
+header>div>div {
+    height: 100%;
+}
+
+header>div nav {
+    height: 100%;
+}
+
+nav ul {
+    height: 100%;
+}
+
+nav ul li {
+    border: 1px solid var(--border-color);
+    list-style: none;
+}
+
+nav ul li i,
+nav ul li .svg {
+    font-size: 1.8em;
+    padding: 0.25rem 0.3rem;
+    display: inline-block;
+    height: 100%;
+    background-color: #BDBDBD;
+    color: #616161;
+}
+
+#cart-qty {
+    position: absolute;
+    top: -1.2rem;
+    left: 32px;
+    color: white;
+    background-color: orangered;
+    height: 22px;
+    text-align: center;
+    border-radius: 11px;
+    padding: 2px;
+    box-shadow: 0px 0px 8px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+#toogle-img-default span {
+    position: absolute;
+    top: 40%;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 0.2rem;
+}
+
+
+main {
+    width: 100%;
+    padding: .5rem 2%;
+}
+
+main>div {
+    margin-top: 4em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+
+.card img {
+    border-bottom: 3px solid blue;
+    width: 100%;
+}
+
+.info {
+    flex-direction: column;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.toogle  {
+    height: calc(100vh - 4rem);
+    display: block;
+    position: fixed;
+    top: -0.2rem;
+    right: 0;
+    background-color: white;
+    overflow: auto;
+    width: 92vw;
+    transform: translateX(92vw);
+    transform-style: preserve-3d;
+    transition: .3s;
+}
+
+.toogle > div {
+    width: 100%;
+    padding:  0.7rem 0.5rem;
+}
+
+.toogle .card {
+height: auto;
+}
+
+.mini-picture span {
+    display: inline-block;
+    width: 2.5rem;
+}
+
+.sizes label {
+    display: flex;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: .2rem;
+}
+
+input[name='size'], input[name='color'] {
+    display: contents;
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: .5rem;
+    margin: .5rem 1.25rem;
+}
+
+.colors label {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-color: red;
+}
+
+.exit {
+    color: white;
+    text-align: center;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 1.2rem;
+    background-color: red;
+}
