@@ -130,9 +130,9 @@ main>div {
 }
 
 .toogle  {
+    grid-template-columns: 1fr;
     height: calc(100vh - 3.5rem);
-    padding-top: 5px;
-    display: block;
+    padding: 5px 0;
     position: fixed;
     top: -1rem;
     right: 0;
@@ -149,7 +149,7 @@ main>div {
 .toogle > div {
     width: 100%;
     padding:  0.7rem 0.5rem;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .toogle .card {
