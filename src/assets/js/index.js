@@ -79,7 +79,7 @@ colors.forEach((color, i) => color.addEventListener('click', async () => {
     loading.classList.add('loading')
     loading.innerHTML = '<div></div>'
     containerToogleImg.appendChild(loading)
-    
+    changeImgdefault.forEach(change => change.style.display = 'none')
     try {
         const src = inputColors[i].value
         const response = await fetch(`src/assets/image/${src}`)
