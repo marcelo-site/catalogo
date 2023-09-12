@@ -146,6 +146,16 @@ main>div {
     z-index: 100;
 }
 
+.toogle > div {
+    width: 100%;
+    padding:  0.7rem 0.5rem;
+    min-height: 100%;
+}
+
+.toogle .card {
+height: auto;
+}
+
 #background {
     height: 100vh;
     width: 100vw;
@@ -153,15 +163,6 @@ main>div {
     position: fixed;
     top: -1rem;
     z-index: 90;
-}
-
-.toogle > div {
-    width: 100%;
-    padding:  0.7rem 0.5rem;
-}
-
-.toogle .card {
-height: auto;
 }
 
 .mini-picture {
