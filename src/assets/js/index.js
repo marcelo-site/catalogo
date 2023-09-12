@@ -77,7 +77,7 @@ colors.forEach((color, i) => color.addEventListener('click', async () => {
     
     try {
         const src = inputColors[i].value
-        const response = await fetch(`/src/assets/image/${src}`)
+        const response = await fetch(`src/assets/image/${src}`)
     if (!response.ok) {
       throw new Error("Network response was not OK");
     }
