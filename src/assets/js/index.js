@@ -18,7 +18,6 @@ const exitToogle = () => {
     elToogle.style.transform = 'translatex(90vw)'
     background.style.display = 'none'
 }
-
 const bigMiniPicture = (el) => el.style.transform = 'scale(1.15)'
 
 let currentImg = 0
@@ -55,6 +54,12 @@ miniPicture.forEach((img, i) => img.addEventListener('click', (img) => {
     toogleImgdefault.src = `${img.target.src}`
     miniPicture.forEach(pictture => pictture.style.transform = '')
     bigMiniPicture(miniPicture[currentImg])
+    changeImgdefault.forEach(change => change.style.display = '')
+    if(currentImg === miniPicture.length - 1) {
+        changeImgdefault[1].style.display = 'none' 
+    } else if (currentImg === 0) {
+        changeImgdefault[0].style.display = 'none' 
+    }
 }))
 
 sizes.forEach((size, i) => size.addEventListener('click', () => {
