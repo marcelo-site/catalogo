@@ -7,7 +7,7 @@
 
 :root {
     --shadow-color: rgba(0, 0, 0, 0.5);
-    --border-color: rgba(0, 0, 0, 0.5);
+    --border-color: rgba(0, 0, 0, 0.3);
 }
 
 .interface {
@@ -113,13 +113,13 @@ main>div {
 
 .card {
     border: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0.5rem 0;
     overflow: hidden;
 }
 
 .card img {
-    border-bottom: 3px solid blue;
+    /* border-bottom: 3px solid blue; */
     width: 100%;
 }
 
@@ -130,17 +130,29 @@ main>div {
 }
 
 .toogle  {
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 3.5rem);
+    padding-top: 5px;
     display: block;
     position: fixed;
-    top: -0.2rem;
+    top: -1rem;
     right: 0;
     background-color: white;
     overflow: auto;
-    width: 92vw;
+    width: 90vw;
     transform: translateX(92vw);
     transform-style: preserve-3d;
     transition: .3s;
+    font-size: 1.1rem;
+    z-index: 100;
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000085;
+    position: fixed;
+    top: -1rem;
+    z-index: 90;
 }
 
 .toogle > div {
@@ -150,6 +162,10 @@ main>div {
 
 .toogle .card {
 height: auto;
+}
+
+.mini-picture {
+    margin: .5rem .3rem;
 }
 
 .mini-picture span {
@@ -165,10 +181,15 @@ height: auto;
     font-size: 1.2rem;
     border: 1px solid;
     border-radius: .2rem;
+    z-index: 1;
 }
 
 input[name='size'], input[name='color'] {
     display: contents;
+    z-index: -1;
+    position: absolute;
+    z-index: -10;
+    pointer-events: none;
 }
 
 .colors {
@@ -184,14 +205,70 @@ input[name='size'], input[name='color'] {
     height: 2rem;
     width: 2rem;
     background-color: red;
+    border-radius: 5px;
 }
 
 .exit {
-    color: white;
     text-align: center;
-    display: block;
+    display: flex;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.exit i {
     font-size: 1.2rem;
-    background-color: red;
+}
+
+.qty {
+    margin: .5rem 0;
+}
+
+.qty input {
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    padding: .2rem;
+    outline: none;
+    width: 40px;
+    text-align: center;
+}
+.qty span {
+    display: flex;
+    flex-direction: row;
+}
+.qty > span > span {
+    background-color: #6e6e6e4f;
+    border: 1px solid var(--border-color);
+    padding: 0 0.25rem;
+}
+
+.loading {
+    background-color: #ffffff85;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.loading div {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    border: 5px solid transparent;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    animation: giro 1.5s infinite;
+    transition: .4s ease-in-out;
+}
+
+@keyframes giro {
+    0%{
+        transform: rotatez(0deg);
+    }
+
+    100% {
+        transform: rotatez(360deg);
+    }
 }

@@ -58,7 +58,7 @@
 
             <div class="card">
                 <div>
-                    <img src="src/assets/image/1689205716989-pexels-ficky-2364618.webp" alt="">
+                    <img src="src/assets/image/1689205971882-pexels-ingrid-santana-1878687.webp" alt="">
                 </div>
                 <div class="info flex-center">
                     <h3>PRODUTO 01</h3>
@@ -71,16 +71,16 @@
 
         <div class="toogle" id="toogle">
            <div>
-            <span onclick="exitToogle()" class="exit">x</span>
+            <span onclick="exitToogle()" class="exit"><i class="bi bi-reply-fill"></i> voltar</span>
             <div class="card">
                 <div id="toogle-img-default" style="position: relative;">
-                    <span>&lt;</span>
+                    <span style="display: none;">&lt;</span>
                     <img src="src/assets/image/1689205716989-pexels-ficky-2364618.webp" alt="">
                     <span style="right: 0;">&gt;</span>
                 </div>
                 <div class="mini-picture">
                     <span>
-                        <img src="src/assets/image/1689205752812-pexels-devesh-pandey-2958620.webp" alt="">
+                        <img style="transform: scale(1.15);" src="src/assets/image/1689205716989-pexels-ficky-2364618.webp" alt="">
                     </span>
                     <span>
                         <img src="src/assets/image/1689205971882-pexels-ingrid-santana-1878687.webp" alt="">
@@ -95,30 +95,30 @@
                     <form>
                      <div class="sizes flex-center">
                         <span> tamanhos: </span>
-                        <label for="p">P</label>
-                        <input type="radio" name="size" id="p">
-                        <label for="m">M</label>
-                        <input type="radio" name="size" id="m">
-                        <label for="g">G</label>
-                        <input type="radio" name="size" id="g">
+                        <label for="sizep">P</label>
+                        <input type="radio" name="size" id="sizep" value="p">
+                        <label for="sizem">M</label>
+                        <input type="radio" name="size" id="sizem" value="m">
+                        <label for="sizeg">G</label>
+                        <input type="radio" name="size" id="sizeg" value="g">
                      </div>
                      <div class="colors flex-center">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
-                        <label for=""></label>
-                        <input type="radio" name="color" id="">
+                        <label for="cor1" style="background-color: #253340;"></label>
+                        <input type="radio" name="color" id="cor1" value="1689206752315-pexels-ravi-k-9386392.webp">
+                        <label for="cor2" style="background-color: blue;"></label>
+                        <input type="radio" name="color" id="cor2" value="1689206043060-pexels-bm-capture-2232981.webp">
+                        <label for="cor3" style="background-color: red;"></label>
+                        <input type="radio" name="color" id="cor3" value="1689284591972-pexels-andrea-piacquadio-845434.webp">
+                        <label for="cor4" style="background-color: yellow;"></label>
+                        <input type="radio" name="color" id="cor4" value="1689206156244-pexels-alisson-souto-1759622.webp">
+                     </div>
+                     <div class="qty flex-center">
+                        <label for="qty">Quantidade: </label>
+                        <span>
+                        <span>-</span>
+                        <input type="number" name="qty" id="qty" value="1"> 
+                        <span>+</span>
+                        </span>
                      </div>
                      <div class="flex-center">
                         <input class="btn" type="submit" value="Escolher">
@@ -128,6 +128,8 @@
             </div>
            </div>
         </div>
+
+        <div id="background" style="display: none;" onclick="exitToogle()"></div>
     </main>
 </body>
 
