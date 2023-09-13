@@ -148,7 +148,7 @@ main>div {
 .toogle  {
     grid-template-columns: 1fr;
     height: calc(100vh - 3.5rem);
-    padding: 5px 0 1rem;
+    padding: 5px 0 10px;
     position: fixed;
     top: -1rem;
     right: 0;
