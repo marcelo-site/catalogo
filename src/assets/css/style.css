@@ -99,7 +99,7 @@ nav ul li .svg {
 
 
 main {
-    width: 100%;
+    width: 100vw;
     padding: .5rem 2%;
 }
 
@@ -107,15 +107,16 @@ main>div {
     margin-top: 4em;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 
 .card {
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin: 0.5rem 0;
     overflow: hidden;
+    position: relative;
 }
 
 .card img {
@@ -123,10 +124,29 @@ main>div {
     width: 100%;
 }
 
+.toogle > div {
+    position: relative;
+}
+
+.card button, .toogle input[type='submit'], .toogle button{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
 .info {
     flex-direction: column;
     text-align: center;
-    margin: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 2.5rem;
+    /* background-color: red; */
+}
+
+.info form > div {
+    margin: 1rem 0;
 }
 
 .toogle  {
