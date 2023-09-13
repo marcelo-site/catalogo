@@ -124,10 +124,6 @@ main>div {
     width: 100%;
 }
 
-.toogle > div {
-    position: relative;
-}
-
 .card button, .toogle input[type='submit'], .toogle button{
     width: 100%;
     position: absolute;
@@ -169,8 +165,8 @@ main>div {
 .toogle > div {
     width: 100%;
     padding:  0.7rem 0.5rem;
-    height: 105%;
-    /* height: auto; */
+    height: 108%;
+    position: relative;
 }
 
 .toogle .card {
