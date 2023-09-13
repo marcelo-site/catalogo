@@ -9,14 +9,18 @@ const sizes = document.querySelectorAll('.sizes label')
 const inputSizes = document.querySelectorAll('.sizes input')
 const colors = document.querySelectorAll('.colors label')
 const inputColors = document.querySelectorAll('.colors input')
+const body = document.querySelector('body')
 
 const toogle = (e) => {
     elToogle.style.transform = 'translatex(0)'
     background.style.display = 'block'
+    body.style.overflow = 'hidden'
+
 }
 const exitToogle = () => {
     elToogle.style.transform = 'translatex(90vw)'
     background.style.display = 'none'
+    body.style.overflow = ''
 }
 const bigMiniPicture = (el) => el.style.transform = 'scale(1.15)'
 
